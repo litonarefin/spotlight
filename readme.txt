@@ -8,13 +8,14 @@ Requires PHP: 5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
+
 Spotlight brings a powerful and intuitive search experience to your WordPress site, inspired by the MacOS Spotlight feature. Quickly access and manage your posts, pages, settings, and more—all from a sleek, user-friendly interface.
+
 
 == Description ==
 Spotlight for WordPress is designed to revolutionize how you navigate and interact with your website. Inspired by the seamless and efficient MacOS Spotlight, this plugin offers you the convenience of performing tasks and finding content with just a few keystrokes.
 
 Whether you're a developer, content creator, or site administrator, Spotlight enhances your productivity by providing instant access to:
-
 
 
 - **User Search**: Search Users from Spotlight search
@@ -25,7 +26,6 @@ Whether you're a developer, content creator, or site administrator, Spotlight en
 - **And much more!**
 
 Spotlight's elegant and minimalist interface blends seamlessly with your site, with a built-in dark mode for a beautiful, distraction-free experience. It's the perfect tool for anyone looking to speed up their workflow and simplify site management.
-
 
 
 
@@ -90,6 +90,6 @@ Initial release. No upgrade issues.
 
 == Notes ==
 = Keyboard Shortcuts =
-- **Open Spotlight**: Alt + S
+- **Open Spotlight**: S
 - **Close Spotlight**: Esc
 Enjoy the powerful, time-saving features of "Spotlight" on your WordPress site!

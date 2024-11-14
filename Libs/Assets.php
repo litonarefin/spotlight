@@ -49,7 +49,7 @@ if ( ! class_exists( 'Assets' ) ) {
 			wp_enqueue_style('spotlight-form', WPSPOTLIGHT_ASSETS . 'css/spotlight-form.css', array('dashicons'), WPSPOTLIGHT_VER, 'all');
 
 			// JS Files .
-			wp_enqueue_script('spotlight', WPSPOTLIGHT_ASSETS . 'js/spotlight.js', array('jquery',), WPSPOTLIGHT_VER, true);
+			wp_enqueue_script('spotlight', WPSPOTLIGHT_ASSETS . 'js/wp-spotlight.js', array('jquery',), WPSPOTLIGHT_VER, true);
 			wp_localize_script(
 				'spotlight',
 				'WPSPOTLIGHT_CORE',

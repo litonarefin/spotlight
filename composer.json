@@ -1,14 +1,12 @@
 {
-    "name": "litonarefin/wp-spotlight",
+    "name": "litonarefin/spotlight",
     "autoload": {
         "psr-4": {
             "WPSPOTLIGHT\\Inc\\": "Inc/",
             "WPSPOTLIGHT\\Inc\\Admin\\": "Inc/Admin",
-            "WPSPOTLIGHT\\Libs\\": "Libs/",
-            "WPSPOTLIGHT\\Libs\\License\\": "Libs/License/"
+            "WPSPOTLIGHT\\Libs\\": "Libs/"
         },
         "files": [
-            "Libs/License/manager.php",
             "Inc/functions.php",
             "Inc/utils.php"
         ]
