@@ -1,0 +1,24 @@
+{
+    "name": "litonarefin/wp-spotlight",
+    "autoload": {
+        "psr-4": {
+            "WPSPOTLIGHT\\Inc\\": "Inc/",
+            "WPSPOTLIGHT\\Inc\\Admin\\": "Inc/Admin",
+            "WPSPOTLIGHT\\Libs\\": "Libs/",
+            "WPSPOTLIGHT\\Libs\\License\\": "Libs/License/"
+        },
+        "files": [
+            "Libs/License/manager.php",
+            "Inc/functions.php",
+            "Inc/utils.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jewel Theme",
+            "email": "support@jeweltheme.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {}
+}

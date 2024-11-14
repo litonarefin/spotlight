@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$cardBg: #1a202c;
+$primary: #e2e8f0;
+$secondary: #718096;
+$buttonBg: #4a5568;
+$buttonText: #cbd5e0;
+$show: #10182814;
+$border: #4a5568;
+$hover: #4a5568;
+
+body {
+    background-color: #edf2f7;
+}
+
+#jlt-power-user-root-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999;
+    width: 100vw;
+    height: 100vh;
+
+    .jltpu_search-form-wrapper {
+        position: relative;
+        height: 100%;
+        .jltpu_search-form-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.629);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .search-wrapper {
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // width: 100%;
+                // height: 100vh;
+                .search {
+                    width: 584px;
+                    height: 350px;
+                    border-radius: 8px;
+                    box-shadow: 0 16px 12px $show;
+                    background-color: $cardBg;
+                    .search-header {
+                        p {
+                            font-family: "Inter", sans-serif;
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            color: $secondary;
+                            text-align: right;
+                            margin: 0;
+                            padding-top: 8px;
+                            padding-right: 16px;
+                        }
+                        .search-action {
+                            padding-left: 24px;
+                            padding-bottom: 18px;
+                            border-bottom: 1px solid $border;
+                            .jltpu_selected-category {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                button {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 6px;
+                                    font-family: "Inter", sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    line-height: 16px;
+                                    color: $buttonText;
+                                    padding: 4px 8px;
+                                    outline: none;
+                                    border: 0;
+                                    border-radius: 2px;
+                                    background-color: $buttonBg;
+                                    svg {
+                                        width: 14px;
+                                        height: 14px;
+                                        color: $primary;
+                                    }
+                                }
+                            }
+                            input {
+                                width: 70%;
+                                height: 28px;
+                                padding: 0;
+                                margin-top: 18px;
+                                font-family: "Inter", sans-serif;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                color: $secondary;
+                                outline: none;
+                                border: none;
+
+                                background-color: transparent;
+                                &::placeholder {
+                                    color: $secondary;
+                                }
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                    .search-body {
+                        padding: 8px;
+                        ul {
+                            height: 221px;
+                            overflow-y: scroll;
+                            overflow-x: hidden;
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            li {
+                                margin-top: 4px;
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 6px;
+                                    width: 93%;
+                                    border-radius: 4px;
+                                    padding: 8px 16px;
+                                    text-decoration: none;
+                                    font-family: "Inter", sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 24px;
+                                    color: $primary;
+                                    transition: all 0.3ms;
+                                    svg {
+                                        width: 12px;
+                                        height: 12px;
+                                        color: $primary;
+                                    }
+                                    &:focus {
+                                        box-shadow: none;
+                                    }
+                                    &:hover {
+                                        background-color: $hover;
+                                    }
+                                    &.jltpu_active {
+                                        background-color: $hover;
+                                    }
+                                    .jltpu_title-wrapper {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 8px;
+                                        figure {
+                                            margin: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                    .jltpu_tags {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 4px;
+                                        span {
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            line-height: 16px;
+                                            color: #e2e8f0;
+                                            &.jltpu_tag-badge {
+                                                background: #1f2733;
+                                                border: 1px solid #4a5568;
+                                                border-radius: 2px;
+                                                padding: 4px 8px;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+                            }
+                            &::-webkit-scrollbar {
+                                width: 6px;
+                                border-radius: 16px;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 8px;
+                                background: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // .jltpu_settings-overlay {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     background: red;
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity: 0.2;
+    // }
+}
