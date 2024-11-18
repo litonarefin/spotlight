@@ -44,12 +44,12 @@ if ( ! class_exists( 'Assets' ) ) {
 		public function jltwp_spotlight_enqueue_scripts() {
 
 			// CSS Files .
-			wp_enqueue_style('spotlight', WPSPOTLIGHT_ASSETS . 'css/spotlight.css', array('dashicons'), WPSPOTLIGHT_VER, 'all');
+			wp_enqueue_style('spotlight', WPSPOTLIGHT_ASSETS . 'css/wp-spotlight.css', array('dashicons'), WPSPOTLIGHT_VER, 'all');
 
-			wp_enqueue_style('spotlight-form', WPSPOTLIGHT_ASSETS . 'css/spotlight-form.css', array('dashicons'), WPSPOTLIGHT_VER, 'all');
+			wp_enqueue_style('spotlight-form', WPSPOTLIGHT_ASSETS . 'css/wp-spotlight-form.css', array('dashicons'), WPSPOTLIGHT_VER, 'all');
 
 			// JS Files .
-			wp_enqueue_script('spotlight', WPSPOTLIGHT_ASSETS . 'js/spotlight.js', array('jquery',), WPSPOTLIGHT_VER, true);
+			wp_enqueue_script('spotlight', WPSPOTLIGHT_ASSETS . 'js/wp-spotlight.js', array('jquery',), WPSPOTLIGHT_VER, true);
 			wp_localize_script(
 				'spotlight',
 				'WPSPOTLIGHT_CORE',
